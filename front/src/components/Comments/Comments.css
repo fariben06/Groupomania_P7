@@ -1,0 +1,72 @@
+/******************************
+ *  COMMENT STYLE BLOCK/TEXT  *
+ ******************************/
+.comment {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: var(--color-options-comment-light);
+    border-top: 1px solid var(--color-accent);
+}
+
+.comment p {
+    width: 100%;
+    padding-left: 10px;
+    font-size: 0.9em;
+}
+
+.comment h3 {
+    color: var(--color-options-comment);
+}
+
+.comment .article-no-options {
+    width: 0;
+    height: 40px;
+}
+
+form.addComment {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-top: 1px solid var(--color-accent);
+}
+
+form.addComment > input {
+    margin: 10px !important;
+    padding-left: 5px;
+}
+
+form.addComment button,
+form.editComment button {
+    margin: 10px 0;
+    padding: 0;
+    min-width: 40px;
+    height: 40px;
+    font-size: 1.1em;
+    color: var(--color-valid-accent);
+    background-color: var(--color-valid-accent-2);
+}
+
+form.addComment button:disabled,
+form.editComment button:disabled {
+    background-color: var(--color-accent-light);
+    color: var(--color-accent);
+    cursor: no-drop;
+}
+
+form.editComment {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+}
+
+form.editComment input {
+    margin: 5px !important;
+    padding: 5px;
+}
+
+.comment-content {
+    width: 100%;
+}
+/******************************/

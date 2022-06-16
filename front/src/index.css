@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-weight: 400;
+}
+
+*.hidden {
+    display: none;
+}
+
+
+:root {
+    /* Default Color */
+    --color-primary: #4E5166;
+    --color-secondary: #FFFFFF;
+    --color-accent-light: #FFD7D7;
+    --color-accent: #FD2D01;
+    --color-accent-2: #CCCCCC;
+    --color-accent-dark: #545454;
+    --color-shadow: rgba(0, 0, 0, 0.5);
+    --font-color: #000000;
+    /* Valid Color */
+    --color-valid-accent: #095700;
+    --color-valid-accent-2: #caf2c6;
+    /* Error Color */
+    --color-error-light: #ffeded
+        /*#F5C2C2*/
+    ;
+    /* Options Color */
+    --color-options-comment: #FD2D01;
+    --color-options-comment-light: #EDF1FF;
+}
+
+
+#root {
+    margin: 0 auto;
+    max-width: 700px;
+    height: 91vh;
+}
+
+
+body {
+    font-family: 'Lato', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: var(--color-primary);
+    color: var(--font-color);
+}
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 9vh;
+    padding: 5px;
+}
+
+
+main,
+article,
+img {
+    width: 100%;
+}
+
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    top: 9px;
+    padding-right: 10px;
+    width: 95%;
+    max-width: 150px;
+    z-index: 2;
+}
+
+
+nav button {
+    margin: 0 5px;
+    padding: 10px;
+}
+
+/*****************************************
+ * TEXTE DE STYLE PAR DÉFAUT/H1/H2/... *
+ ****************************************/
+h1 {
+    color: var(--color-secondary);
+    margin-block-start: 6px;
+    margin-inline-start: 10px;
+    text-align: center;
+}
+
+
+h2,
+h3,
+h4 {
+    width: 100%;
+}
+
+
+h2 {
+    padding-top: 20px;
+    text-align: center;
+}
+
+
+h3,
+h4 {
+    margin-inline-start: 20px;
+}
+
+
+h3 {
+    font-size: 1em;
+    color: var(--color-primary);
+}
+
+
+h4 {
+    font-size: 0.8em;
+    color: var(--color-accent-dark);
+}
+
+
+h1,
+h2,
+h3,
+h4,
+p {
+    cursor: default;
+}
+
+
+p.error {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: var(--color-error-light);
+    color: var(--color-primary);
+    text-align: center;
+}
+
+/**********************************************/
+
+.disabledLink {
+    pointer-events: none;
+}
+
+
+/*************************************
+* BOUTON DE STYLE PAR DÉFAUT/ENTRÉE *
+**************************************/
+*:focus {
+    outline: none;
+}
+
+
+*:disabled {
+    color: var(--color-accent-dark) !important;
+    background-color: var(--color-accent) !important;
+    cursor: no-drop !important;
+}
+
+
+button {
+    padding: 15px;
+    border: 0;
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+    background-color: #FFD7D7;
+    cursor: pointer;
+}
+
+
+input.error {
+    color: var(--color-primary) !important;
+    background-color: var(--color-error-light) !important;
+    border-bottom: 2px solid var(--color-primary) !important;
+}
+
+
+input.valid {
+    color: var(--color-valid-accent) !important;
+    background-color: var(--color-valid-accent-2) !important;
+    border-bottom: 2px solid var(--color-valid-accent) !important;
+}
+
+
+.file-upload {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: 5px;
+    padding: 10px;
+    font-family: 'Lato', sans-serif;
+    font-size: 0.8em;
+    text-transform: uppercase;
+    color: var(--color-accent-light);
+    border-radius: 0 0 1em 1em;
+    cursor: pointer;
+}
+
+
+.file-upload:hover {
+    color: var(--font-color);
+    background-color: var(--color-valid-accent);
+}
+
+
+input[type='file'] {
+    display: none;
+}
+
+input[type='text'],
+input[type='password'],
+input[type='email'],
+textarea {
+    margin: 0 10px;
+    width: 100%;
+    font-family: 'Lato', sans-serif;
+    font-size: 1em;
+    padding: 10px 0px;
+    border: 0;
+    background-color: transparent;
+    border-bottom: 2px solid var(--color-accent);
+}
+
+
+input[type='button'],
+input[type='submit'] {
+    width: 125px;
+    padding: 15px 0 10px 0;
+    font-family: 'Lato', sans-serif;
+    font-size: 0.8em;
+    text-transform: uppercase;
+    border: 0;
+    color: var(--font-color);
+    cursor: pointer;
+}
+
+input[type='button']:disabled,
+input[type='submit']:disabled {
+    color: var(--color-accent) !important;
+    background-color: var(--color-accent-2) !important;
+    border: 2px solid;
+    cursor: no-drop;
+}
+
+/******************************/

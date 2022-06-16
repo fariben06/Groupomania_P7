@@ -1,0 +1,222 @@
+/******************************
+ *  ARTICLE STYLE BLOCK/TEXT  *
+ ******************************/
+article {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: var(--color-secondary);
+    box-shadow: 1px 1px 0 1px var(--color-shadow);
+}
+
+article form>input {
+    margin: 10px auto !important;
+}
+
+article form>label {
+    display: none;
+}
+
+article .file-upload {
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    width: 40px;
+    height: 40px;
+    padding: 9px;
+    font-size: 1.1em;
+    border: 2px solid;
+    background-color: var(--color-shadow);
+    border: 2px solid var(--color-options-comment);
+    border-radius: 2em;
+}
+
+article .file-upload:hover {
+    color: var(--color-options-comment);
+    background-color: var(--color-secondary);
+}
+
+article .file-upload.extended {
+    width: 100%;
+}
+
+.article-edit-avatar {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.article-edit-avatar button {
+    margin-top: 5px;
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    width: 40px;
+    height: 40px;
+    padding: 9px;
+    font-size: 1.1em;
+    color: var(--color-secondary);
+    background-color: var(--color-shadow);
+    border: 2px solid var(--color-primary);
+    border-radius: 2em;
+}
+
+.article-edit-avatar button:hover {
+    color: var(--color-primary);
+    background-color: var(--color-secondary);
+}
+
+article img {
+    display: block;
+    max-width: max-content;
+    margin: 0 auto;
+}
+
+article p {
+    margin-block-start: 10px;
+    margin-block-end: 10px;
+}
+
+article .infos-total {
+    display: flex;
+    justify-content: center;
+}
+
+article p.comment {
+    display: block;
+    min-width: 50%;
+    width: 100%;
+    margin: 4px;
+    padding: 6px;
+    font-size: 0.8em;
+    text-align: right;
+    color: var(--color-options-comment);
+    border: 0;
+}
+
+article p.like {
+    display: block;
+    min-width: 50%;
+    width: 100%;
+    margin: 4px;
+    padding: 6px;
+    font-size: 0.8em;
+    text-align: left;
+    color: var(--color-primary);
+    border: 0;
+    background-color: var(--color-error-light);
+}
+
+.article-author {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 5px;
+    border-bottom: 1px solid var(--color-accent);
+}
+
+.author-infos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 85%;
+    height: 40px;
+    padding: 0 5px;
+}
+
+.article-options {
+    width: 40px;
+    min-width: 40px;
+    height: 40px;
+    padding-top: 6px;
+    font-size: 1.8em;
+    color: var(--color-accent);
+    text-align: center;
+    border-radius: 0.1em;
+    cursor: pointer;
+}
+
+.article-options:hover {
+    background-color: var(--color-accent-light);
+    box-shadow: 1px 1px 0 var(--color-accent);
+    border: 1px solid var(--color-accent-2);
+}
+
+.article-options:active {
+    background-color: var(--color-accent-light);
+    box-shadow: 1px 1px 0 var(--color-accent);
+}
+
+.article-no-options {
+    width: 40px;
+    height: 40px;
+}
+
+.article-no-options button {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    font-size: 1.2em;
+    color: var(--color-secondary);
+    border: 1px solid;
+    border-radius: 0.2em;
+    background-color: var(--color-options-comment);
+}
+
+.article-no-options button:hover {
+    color: var(--color-options-comment);
+    background-color: var(--color-secondary);
+}
+
+/******************************/
+
+form.addArticle {
+    display: flex;
+    width: 100%;
+    padding: 10px;
+    background-color: #ffffff;
+    box-shadow: 1px 1px 0 1px var(--color-shadow);
+}
+
+form.addArticle label {
+    display: none;
+}
+
+form.addArticle label.file-upload {
+    display: block;
+    margin: 10px 5px;
+    padding: 10px;
+    min-width: 40px;
+    width: 40px;
+    height: 40px;
+    font-size: 1.1em;
+    background-color: var(--color-options-comment);
+    border-radius: 0;
+    border: 1px solid;
+}
+
+form.addArticle label.file-upload:hover {
+    color: var(--color-options-comment);
+    background-color: var(--color-secondary);
+}
+
+form.addArticle input {
+    margin: 10px !important;
+    padding-left: 5px;
+
+}
+
+form.addArticle button {
+    margin: 10px 0;
+    padding: 0;
+    min-width: 40px;
+    height: 40px;
+    font-size: 1.1em;
+    color: var(--color-valid-accent);
+    background-color: var(--color-valid-accent-2);
+}
+
+form.addArticle button:disabled {
+    background-color: var(--color-accent-light);
+    color: var(--color-accent);
+    cursor: no-drop;
+}

@@ -1,0 +1,205 @@
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 15px auto;
+    padding: 10px;
+    max-width: 100%;
+    background-color: var(--color-secondary);
+    box-shadow: 1px 1px 0 1px var(--color-shadow);
+}
+
+.profile h2 {
+    background-color: var(--color-accent-light);
+    color: var(--color-accent-dark);
+    padding: 10px;
+}
+
+.profile img {
+    width: 150px;
+    height: 150px;
+    border-radius: 5em;
+    object-fit: cover;
+}
+
+.profile form {
+    margin-top: 10px;
+}
+
+.profile form h2 {
+    background-color: unset;
+    color: unset;
+    padding-top: 20px;
+}
+
+.profile form label {
+    display: none;
+}
+
+.profile form input[type='submit'] {
+    margin: 10px;
+    background-color: var(--color-options-comment);
+    color: var(--color-secondary);
+    border: 1px solid;
+}
+
+.profile form input[type='submit']:hover {
+    background-color: var(--color-secondary);
+    color: var(--color-options-comment);
+}
+
+.profile input[type='button'] {
+    margin: 10px;
+    width: -webkit-fill-available !important;
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+    border: 1px solid;
+}
+
+.profile input[type='button']:hover {
+    background-color: var(--color-secondary);
+    color: var(--color-primary);
+}
+
+.profile input[type='text'],
+.profile input[type='email'],
+.profile input[type='password'],
+.profile input[type='submit'] {
+    width: -webkit-fill-available !important;
+}
+
+.profile input[type='text']#Tasks {
+    margin-block-start: 10px;
+    margin-block-end: 10px;
+    cursor: pointer;
+}
+
+.profile .file-upload {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: 5px;
+    padding: 10px;
+    font-family: 'Lato', sans-serif;
+    font-size: 0.8em;
+    text-transform: uppercase;
+    color: var(--color-accent-light);
+    border-radius: 0 0 1em 1em;
+    cursor: pointer;
+}
+
+.profile .names-content {
+    display: flex;
+    margin-top: 20px;
+}
+
+.admin-panel {
+    width: 100%;
+    margin-top: 15px;
+    padding: 10px;
+    background-color: var(--color-secondary);
+    box-shadow: 1px 1px 0 1px var(--color-shadow);
+}
+
+.admin-panel h2 {
+    background-color: var(--color-accent-light);
+    color: var(--color-accent-dark);
+    padding: 10px;
+}
+
+.admin-panel h3 {
+    margin-block-start: 10px;
+    margin-block-end: 10px;
+    color: var(--color-options-comment);
+}
+
+.admin-panel label {
+    display: none;
+}
+
+.admin-panel input[type='text'] {
+    margin: 0;
+}
+
+.admin-panel .members-result {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.admin-panel .members-result .member {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 125px;
+    max-width: 150px;
+    background-color: var(--color-accent-light);
+    border: 1px solid var(--color-accent-2);
+    padding: 10px;
+    border-radius: 0.5em;
+}
+
+.admin-panel .task {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    width: 100%;
+    justify-content: space-between;
+    background-color: var(--color-options-comment-light);
+}
+
+.admin-panel form {
+    display: flex;
+    margin: 10px;
+}
+
+.admin-panel form button[type='submit'] {
+    margin: 0;
+}
+
+/* Buttons styles */
+.admin-panel button {
+    margin: 3px;
+    background-color: var(--color-options-comment);
+    color: var(--color-secondary);
+    border: 1px solid;
+}
+
+.admin-panel button.actived {
+    background-color: var(--color-secondary);
+    color: var(--color-btn);
+    border: 2px dashed;
+}
+
+.admin-panel button.delete {
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+}
+
+/******************/
+
+.app-profile-admin-panel-user,
+.app-profile-admin-panel-task {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+.app-profile-admin-panel-user label {
+    display: none;
+}
+
+.app-profile-admin-panel-task-add {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.app-profile-admin-panel h2 {
+    color: var(--color-primary);
+}
+
+.app-profile-admin-panel h3 {
+    margin-block-start: 15px;
+    margin-block-end: 10px;
+}

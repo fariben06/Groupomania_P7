@@ -1,0 +1,89 @@
+/******************************
+ *   AVATAR STYLE COMPONENT   *
+ ******************************/
+.avatar {
+    min-width: 50px;
+    max-width: 50px;
+    height: 50px;
+    padding-top: 6px;
+    border-radius: 2em;
+    color: var(--color-secondary);
+    text-align: center;
+    background-color: #CCC;
+    font-size: 1.9em;
+    border: 2px solid;
+}
+
+.avatar img {
+    max-width: none;
+    position: relative;
+    top: -6px;
+    width: 46px;
+    height: 46px;
+    border-radius: 2em;
+
+    object-fit: cover;
+}
+
+.avatar.clickable {
+    cursor: pointer;
+}
+
+.avatar-profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 10em;
+    background-color: var(--color-accent-light);
+}
+
+.avatar-profile .fa-skull {
+    font-size: 5em;
+    color: var(--color-accent);
+}
+
+.avatar-profile .avatar-options {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.avatar-profile .avatar-options div,
+.avatar-profile .avatar-options label {
+    display: block;
+    width: 40px;
+    height: 40px;
+    font-size: 1.2em;
+    padding-top: 8px;
+    text-align: center;
+    color: var(--color-secondary);
+    background-color: var(--color-shadow);
+    border-radius: 2em;
+    border: 2px solid var(--color-options-comment);
+    cursor: pointer;
+}
+
+.avatar-profile .avatar-options div.delete {
+    border: 2px solid var(--color-primary);
+}
+
+.avatar-profile .avatar-options div.delete:hover,
+.avatar-profile .avatar-options label:hover {
+    border-color: var(--color-secondary);
+}
+
+.avatar-profile .avatar-options label:hover {
+    background-color: var(--color-options-comment);
+}
+
+.avatar-profile .avatar-options div.delete:hover {
+    background-color: var(--color-primary);
+}
+
+/******************************/

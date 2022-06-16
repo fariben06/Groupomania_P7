@@ -1,0 +1,59 @@
+/**************************************
+ *    COMPOSANT DE STYLE DE CONNEXION  *
+ **************************************/
+
+.login,
+.sign {
+    margin: 0 auto;
+    padding: 10px;
+    width: 100%;
+    max-width: 370px;
+}
+
+.login {
+    height: fit-content;
+    background-color: var(--color-secondary);
+    box-shadow: 1px 1px 0 1px var(--color-shadow);
+}
+
+.login h2 {
+    background-color: var(--color-accent-light);
+    color: var(--color-accent-dark);
+    padding: 10px;
+}
+
+.login form>input {
+    margin: 0;
+}
+
+.login form input[type='submit'] {
+    width: 100%;
+    margin-block-start: 10px;
+    margin-block-end: 10px;
+    background-color: var(--color-options-comment);
+    color: var(--color-secondary);
+    border: 1px solid;
+}
+
+.login form input[type='submit']:hover {
+    background-color: var(--color-secondary);
+    color: var(--color-options-comment);
+}
+
+.login form label {
+    display: block;
+    margin-top: 1em;
+}
+
+.sign {
+    text-align: center;
+    color: var(--color-secondary);
+}
+
+.sign h3 {
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    color: var(--color-secondary);
+}
+
+/******************************/
