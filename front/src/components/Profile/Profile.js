@@ -282,16 +282,17 @@ export default class Profile extends React.Component {
               value={valueLastname} onChange={this.OnChange} required />
           </div>
           <label htmlFor="Tasks">tâche</label>
-          <input id='Tasks' name='tasks' type='text' readOnly
-            label='Tâche' value={curTask} onClick={this.OnClickTask} />
+          <input id='Tasks' name='tasks' type='text' readOnly   // On ne peut pas modifier la tâche courante de l'utilisateur. 
+            label='Tâche' value={curTask} onClick={this.OnClickTask} />  {/* OnClickTask est appelé lorsque l'utilisateur clique sur la tâche courante. */}
 
-          <label htmlFor="Email">email</label>
+          <label htmlFor="Email">email</label> {/* On ne peut pas modifier l'email de l'utilisateur. */}
           {/* Si l'email est valide, on affiche l'email de l'utilisateur. Sinon, on affiche un message d'erreur. */}
           <input id='Email' name='email' type='email' placeholder='Ex : example@groupomania.com' // On met le champ email en readOnly pour ne pas pouvoir le modifier.
             label='Adresse email' value={valueEmail} onChange={this.OnChange} required /> {/* On peut modifier l'email de l'utilisateur  en cliquant sur le champ email. */}
 
           {/* Réinitialisation du mot de passe de l'utilisateur*/}
-          <label htmlFor="NewPassword">password</label>
+          <h2>New password</h2>
+          <label htmlFor="">password</label>
           <input id='NewPassword' name='password' type='password' placeholder='Nouveau mot de passe'
             label='Mot de passe' onChange={this.OnChange} />
           <input type='submit' disabled={validForm} label='Mettre à jour' value='Mettre à jour' />
